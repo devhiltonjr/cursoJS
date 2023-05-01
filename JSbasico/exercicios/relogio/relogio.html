@@ -1,0 +1,36 @@
+<!--//Relogio em tempo real-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relogio em tempo real</title>
+    <script>
+        function showTime(){
+      
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+
+            if(hour < 10) hour = '0'+ hour;
+            if(minute < 10) minute ='0'+ minute;
+            if(second < 10)second =' 0' + second;
+            var tempo = + hour+":"+minute+":"+second;
+
+            document.getElementById('timer').innerHTML = tempo;    
+        }
+
+function initTime(){
+    setInterval(showTime, 1000);
+}
+
+    </script>
+</head>
+<body onload="initTime()">
+   
+  <div id="timer"></div>
+   
+</body>
+</html>

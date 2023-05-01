@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Numeros</title>
+</head>
+<body>
+  <script>
+let numero = prompt('Informe um numero')
+
+document.body.innerHTML += `<strong>Seu Numero é: ${numero} <strong> <br />`
+document.body.innerHTML += `A raiz quadra é: ${Math.sqrt(numero)}<br />`;
+document.body.innerHTML += `${numero} é inteiro: ${Number.isInteger(parseInt(numero))}<br />`
+document.body.innerHTML += `É NaN: ${Number.isNaN(numero)}<br />`;
+document.body.innerHTML += `Arredondando para baixo: ${Math.floor(numero)}<br />`
+document.body.innerHTML += `Arredondando para cima: ${Math.ceil(numero)}<br />`
+document.body.innerHTML += `Arredondando automaticamente: ${Math.round(numero)}<br />`
+document.body.innerHTML += `Com duas casas deciamais: ${numero.toFixed(2)}`
+  </script>  
+</body>
+</html>
